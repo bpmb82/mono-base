@@ -4,7 +4,7 @@ FROM debian:buster-slim
 ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
- echo "**** install apt-transport-https ****" && \
+ echo "**** install apt-transport-https first ****" && \
  apt-get update && \
  apt-get install -y apt-transport-https && \
  echo "**** add mono repository ****" && \
